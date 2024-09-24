@@ -21,5 +21,3 @@ git tag ${TAG}
 # send update
 git push origin ${PRD_BRANCH}
 git push origin ${TAG}
-
-echo_msg "Success"
