@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # envs
-DEV_BRANCH="dev"
-PRD_BRANCH="prd"
+DEV_BRANCH="refs/remotes/lab1/dev"
+PRD_BRANCH="refs/remotes/lab1/prd"
 TAG_PREFIX="release-"
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
@@ -21,5 +21,3 @@ git tag ${TAG}
 # send update
 git push origin ${PRD_BRANCH}
 git push origin ${TAG}
-
-echo_msg "Success"
