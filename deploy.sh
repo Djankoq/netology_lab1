@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # envs
-DEV_BRANCH="dev"
-PRD_BRANCH="prd"
+DEV_BRANCH="refs/remotes/lab1/dev"
+PRD_BRANCH="refs/remotes/lab1/prd"
 TAG_PREFIX="release-"
 
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
